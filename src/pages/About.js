@@ -1,12 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-const About = () => {
+export default function aPropos() {
   return (
-    <div>
-      <h1>À Propos</h1>
-      {/* Information sur le blog */}
-    </div>
-  );
-};
-
-export default About;
+    <div>à Propos</div>
+  )
+}

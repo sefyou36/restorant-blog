@@ -1,12 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-const Home = () => {
+export default function Home() {
   return (
-    <div>
-      <h1>Accueil</h1>
-      {/* Ajoute ici les blocs de navigation, recherche, derniers articles, catégories et articles */}
-    </div>
-  );
-};
-
-export default Home;
+    <div>home</div>
+  )
+}

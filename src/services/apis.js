@@ -21,3 +21,6 @@ export const updateArticle = async (id, article) => {
 export const deleteArticle = async (id) => {
   return await axios.delete(`${API_URL}/articles/${id}`);
 };
+export const saveArticle = (article) => {
+  return axios.post("/articles", article);
+};
