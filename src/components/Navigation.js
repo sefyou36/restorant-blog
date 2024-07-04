@@ -1,16 +1,28 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+// // Navigation.js
+// import React from 'react';
+// import { Link, useLocation } from 'react-router-dom';
 
-const Navigation = () => {
-  return (
-    <nav>
-      <ul>
-        <li><Link to="/">Accueil</Link></li>
-        <li><Link to="/add-article">Ajouter un article</Link></li>
-        <li><Link to="/about">À Propos</Link></li>
-      </ul>
-    </nav>
-  );
-};
+// const Navigation = () => {
+//   const location = useLocation();
 
-export default Navigation;
+//   return (
+//     <nav>
+//       <ul>
+//         <li className={location.pathname === '/' ? 'active' : ''}>
+//           <Link to="/">Accueil</Link>
+//         </li>
+//         <li className={location.pathname === '/articles' ? 'active' : ''}>
+//           <Link to="/articles">Articles</Link>
+//         </li>
+//         <li className={location.pathname === '/add-article' ? 'active' : ''}>
+//           <Link to="/add-article">Ajouter un article</Link>
+//         </li>
+//         <li className={location.pathname === '/about' ? 'active' : ''}>
+//           <Link to="/about">À Propos</Link>
+//         </li>
+//       </ul>
+//     </nav>
+//   );
+// };
+
+// export default Navigation;

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'http://localhost:3001'; // Utilisation du port 3001 pour json-server
 
 export const getArticles = async () => {
   return await axios.get(`${API_URL}/articles`);
@@ -19,8 +19,9 @@ export const updateArticle = async (id, article) => {
 };
 
 export const deleteArticle = async (id) => {
-  return await axios.delete(`${API_URL}/articles/${id}`);
+  return  axios.delete(`${API_URL}/articles/${id}`);
 };
+
 export const saveArticle = (article) => {
-  return axios.post("/articles", article);
+  return axios.post(`${API_URL}/articles`, article);
 };
