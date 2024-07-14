@@ -12,7 +12,10 @@ export default function NewArticle() {
     const article = { titre, description, categorie };
     saveArticle(article)
       .then((resp) => {
-        alert(JSON.stringify(resp.data));
+        alert("Article ajouté avec succès !");
+        setTitre("");
+        setDescription("");
+        setCategorie("");
         setError(null); // Réinitialiser les erreurs à null si la requête réussit
       })
       .catch(err => {
